@@ -1,0 +1,33 @@
+/* change top bluebar color to dark */
+html#facebook  :not(._4pmj)._2t-a {
+  background-color: #303040;
+}
+
+/* fixed top bluebar on top - scroll protected */
+html#facebook #pagelet_bluebar {
+  position: fixed;
+  z-index: 3333;
+  width: 100%;
+}
+html#facebook #globalContainer {
+  padding-top: 45px;
+}
+
+/* hidden ads panel */
+html#facebook #rightCol div {
+  display: none;
+}
+
+/* own image in place of ads */
+html#facebook #contentCol #rightCol {
+  background-image: url(https://feelbetterbirmingham.files.wordpress.com/2011/02/foto-torre-piedras-fondo-cielo2.jpg);
+  height: 1131px;
+  background-position: 10% 20%;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* hide cookies info banner */
+html#facebook  .pam.fbPageBanner._3d9x.uiBoxGray.bottomborder {
+  display: none;
+}

@@ -26,7 +26,7 @@ html#facebook #rightCol div {
 
 /* own image in place of ads */
 html#facebook #contentCol #rightCol {
-  background-image: url(http://loremflickr.com/420/1240);
+  background-image: url(http://loremflickr.com/420/1240/nature);
   background-position: 0 -15px;
   height: 1210px;
   opacity: 0.4;
@@ -48,4 +48,20 @@ html#facebook div#pagelet_canvas_nav_content {
 /* adjust post author icons */
 html#facebook img._s0._5xib._5sq7._44ma._rw.img {
   border-radius: 3px;
+}
+
+/* suppress left panel when not needed */
+html#facebook div#leftCol {
+  opacity: 0.4;
+}
+html#facebook div#leftCol:hover {
+  opacity: 1;
+}
+
+/* suppress chat panel when not needed */
+html#facebook div._51x_ {
+  opacity: 0.4;
+}
+html#facebook div._51x_:hover {
+  opacity: 1;
 }

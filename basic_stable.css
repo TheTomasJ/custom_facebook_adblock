@@ -20,17 +20,18 @@ html#facebook #globalContainer {
 /**************** BLOCKERS ****************/
 
 /* hidden ads panel */
-html#facebook #rightCol div {
+html#facebook div._4-u2._19ah._2ph_._4-u8, html#facebook div.cardRightCol._4-u8, html#facebook div.fsm.fwn.fcg {
   display: none;
 }
 
 /* own image in place of ads */
-html#facebook #contentCol #rightCol {
-  background-image: url(http://loremflickr.com/420/1240/nature);
-  background-position: 0 -15px;
-  height: 1210px;
-  opacity: 0.4;
+html#facebook div._45mq {
+  background-image: url(http://loremflickr.com/420/1240/star);
+  background-position: 0 -25px;
+  height: 1180px;
+  opacity: 0.33;
   z-index: 0;
+  font-size: 0 !important;
 }
 
 /* hide cookies info banner */
@@ -52,7 +53,8 @@ html#facebook img._s0._5xib._5sq7._44ma._rw.img {
 
 /* suppress left panel when not needed */
 html#facebook div#leftCol {
-  opacity: 0.4;
+  opacity: 0.9;
+  font-size: 0.8em !important;
 }
 html#facebook div#leftCol:hover {
   opacity: 1;
@@ -60,7 +62,8 @@ html#facebook div#leftCol:hover {
 
 /* suppress chat panel when not needed */
 html#facebook div._51x_ {
-  opacity: 0.4;
+  opacity: 0.9;
+  font-size: 0.8em !important;
 }
 html#facebook div._51x_:hover {
   opacity: 1;

@@ -5,6 +5,16 @@ html#facebook  :not(._4pmj)._2t-a {
   background-color: #303040;
 }
 
+/* change chat bar */
+html#facebook div.clearfix.fbNubFlyoutTitlebar.titlebar {
+  background-color: #303040 !important;
+  color: blue !important;
+}
+
+html#facebook div.clearfix.fbNubFlyoutTitlebar.titlebar .titlebarText {
+  color: #fff !important;
+}
+
 /************** IMPROVEMENTS **************/
 
 /* fixed top bluebar on top - scroll protected */
@@ -20,13 +30,13 @@ html#facebook #globalContainer {
 /**************** BLOCKERS ****************/
 
 /* hidden ads panel */
-html#facebook div._4-u2._19ah._2ph_._4-u8, html#facebook div.cardRightCol._4-u8, html#facebook div.fsm.fwn.fcg {
+html#facebook div._4-u2._19ah._2ph_, html#facebook div.cardRightCol, html#facebook ._45mq .fsm {
   display: none;
 }
 
 /* own image in place of ads */
 html#facebook div._45mq {
-  background-image: url(http://loremflickr.com/420/1240/star);
+  background-image: url(http://loremflickr.com/420/1240/water);
   background-position: 0 -25px;
   height: 1180px;
   opacity: 0.33;

@@ -1,47 +1,51 @@
 /***************** COLORS *****************/
 
+
+/* change login bluebar color to lime and set random image */
+html#facebook div._53jh {
+  background-color: #004D40 !important;
+  background-image: url(https://picsum.photos/1024/768) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* add fancy border to logn form */
+html#facebook div._53jh div.loggedout_menubar {
+  padding: 25px 25px 8px;
+  box-shadow: 0 0 100px #000D00 inset, 0 0 11px black;
+}
+
 /* change top bluebar color to dark */
 html#facebook  :not(._4pmj)._2t-a {
-  background-color: #303040;
-}
-
-/* change chat bar */
-html#facebook div.clearfix.fbNubFlyoutTitlebar.titlebar {
   background-color: #303040 !important;
-  color: blue !important;
+  background-image: none !important;
 }
 
-html#facebook div.clearfix.fbNubFlyoutTitlebar.titlebar .titlebarText {
-  color: #fff !important;
+/* chat login button background */
+html#facebook label.uiButton.uiButtonConfirm#loginbutton {
+  background-color: #303040 !important;
+  border: none !important;
 }
 
 /************** IMPROVEMENTS **************/
 
-/* fixed top bluebar on top - scroll protected */
-html#facebook #pagelet_bluebar {
-  position: fixed;
-  z-index: 3333;
-  width: 100%;
-}
-html#facebook #globalContainer {
-  padding-top: 45px;
+/* intro page hide bullshit */
+html#facebook div.loggedout_menubar_container {
+  height: 100vh !important;
+  padding-top: 45vh;
 }
 
-/**************** BLOCKERS ****************/
-
-/* hidden ads panel */
-html#facebook div._4-u2._19ah._2ph_, html#facebook div.cardRightCol, html#facebook ._45mq .fsm {
+html#facebook td.html7magic, html#facebook td.login_form_label_field {
   display: none;
 }
 
-/* own image in place of ads */
-html#facebook div._45mq {
-  background-image: url(http://loremflickr.com/420/1240/water);
-  background-position: 0 -25px;
-  height: 1180px;
-  opacity: 0.33;
-  z-index: 0;
-  font-size: 0 !important;
+html#facebook i.fb_logo.img {
+  margin-top: -5px !important;
+}
+/**************** BLOCKERS ****************/
+
+/* hidden ads panel */
+html#facebook div#pagelet_ego_pane, html#facebook div._5rzs._5v6d._2zam, html#facebook div._26z1 {
+  display: none;
 }
 
 /* hide cookies info banner */
@@ -52,29 +56,4 @@ html#facebook  .pam.fbPageBanner._3d9x.uiBoxGray.bottomborder {
 /* hide games panel */
 html#facebook div#pagelet_canvas_nav_content {
   display: none;
-}
-
-/*************** REFINEMENTS **************/
-
-/* adjust post author icons */
-html#facebook img._s0._5xib._5sq7._44ma._rw.img {
-  border-radius: 3px;
-}
-
-/* suppress left panel when not needed */
-html#facebook div#leftCol {
-  opacity: 0.9;
-  font-size: 0.8em !important;
-}
-html#facebook div#leftCol:hover {
-  opacity: 1;
-}
-
-/* suppress chat panel when not needed */
-html#facebook div._51x_ {
-  opacity: 0.9;
-  font-size: 0.8em !important;
-}
-html#facebook div._51x_:hover {
-  opacity: 1;
 }
